@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    
+        <div class="purchaseform"><h1>Purchase Ticket </h1></div>
+            
+        
+                
+                    <div id="ticket">
+                        <form>
+                            <div id="name">
+                                <h2 class="name">Select your Region</h2>
+                                <select class="option" name="region">
+                                    <option disabled="disabled" selected="selected">--Choose Option</option>
+                                    <option>Local</option>
+                                    <option>Foreign</option>
+                                </select>
+                            </div>
+            </div>
+        </div>
+        <div id="name">
+            <h2 class="name">Select your Ticket Type</h2>
+            <select class="option" name="region">
+                <option disabled="disabled" selected="selected">--Choose Option</option>
+                <option>Annual</option>
+                <option>Kids</option>
+                <option>Adult</option>
+            </select>
+            
+            <br>
+            <div class="ticket">
+                <label for="num">Enter number of passes</label>
+                <input id='num' type="number" min="0" required>
+            <br>
+            </div>
+            <div class="ticket">
+        
+                <legend>Duration</legend>
+                <input required type="radio" name="duration-select" id="3h">
+                <label for="3h">3 H</label>
+                <input type="radio" name="duration-select" id="halfday">
+                <label for="halfday">Half Day</label>
+                <input type="radio" name="duration-select" id="fullday">
+                <label for="fullday">Full Day</label>
+                <input type="radio" name="duration-select" id="twodays">
+                <label for="twodays">2 Day</label>
+            </div><br>
+            <div class="ticket">
+                <label for="foodtoken">Food Token</label>
+                <input type="checkbox" id="foodtoken" value="foodtoken">
+            </div>
+            <p id="currenttotal">
+                0
+            </p><br>
+            <form>
+                <div class="ticket">
+                <button  type="submit" value="Add to favourites" id="addtofavorite">Add to favourites</button><br>
+                <button  type="submit" value="Order favourite" id="orderfavorite">Order favourite</button>
+                </div>
+                <div class="ticket">
+                    <button  type="submit" value="Add to order" id="addtoorder">Add to order</button><br>
+                </div>
+                <div class="ticket">
+                    <button  type="submit" value="Check loyality" id="checkloyality">Check loyality</button><br>
+                </div>
+                <div class="ticket">
+                    <button  type="submit" value="Place Order" id="placeorder">Place Order</button><br>
+                </div>
+                </form>
+            <div class="inputfield">
+                <fieldset>
+                    <legend>Processing Order</legend>
+                    <table border="1px">
+                      <thead><br>
+                          <tr>
+                           <th>Region</th>
+                           <th>Type</th>
+                           <th>Number</th>
+                           <th>Duration</th>
+                           <th>Extras</th>
+                           <th>Total</th>
+                          </tr>
+                      </thead>
+                      <tbody id="ordertableoutput">
+                          <tr>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                    </fieldset><br>
+                    <h4>Total: Rs. <span id="amount">0</span></h4>
+                    
+            </div>
+    
+        <p id="totaloverall">0</p>
+        </div>
+    </form>
+    
+<script src="Ticket.js"></script>
+</body>
+</html>
